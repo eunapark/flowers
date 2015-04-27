@@ -1,4 +1,6 @@
-$(document).ready(function(){
+(function(){
+
+	$(document).ready(function(){
 	$('#nav').localScroll(800);
 
 	//.parallax(xPosition, speedFactor, outerHeight) options:
@@ -13,3 +15,6 @@ $(document).ready(function(){
 	$('#fifth').parallax("50%", 0.3);
 
 })
+
+
+}).call(this);
