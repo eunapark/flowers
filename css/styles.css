@@ -1,16 +1,78 @@
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		   -box-sizing: border-box;
+}
+
 h1{
-	font-size: 12px;
+	font-size: 25px;
 	font-color: #000;
 	padding-top: 20px;
+	padding-left: 50px;
 }
 
-#flowers{
-  background-color: blue;
+#byline{
+	padding-left: 50px;
 }
 
-.button{
-	font-size: 10px;
+.rose{
+	position: absolute;
+	padding-right: 400px;
 }
-.superduper {
-	height: 20px;
+
+.nav-button{
+	height: 15px;
+
+}
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 25px;
+	top: 20px;
+	/*padding-top: 50px;
+	padding-right: 10px;*/
+}
+
+#nav li{
+	margin: 0 0 15px 0;	
+}
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 200px;
+/*	padding-left: 200px;*/
+}
+
+p{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 14px;
+}
+
+.story{
+	margin: 50px auto;
+	/*min-width: 90px;*/
+	overflow: auto;
+	/*padding-left: 8em;*/
+	position: absolute;
+	margin-top: 75px;
+	width: 650px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 14px;
+
+}
+
+/*.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 400px;	
+}*/
+
+#intro{
+	
 }
