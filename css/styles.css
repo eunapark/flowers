@@ -4,6 +4,9 @@
 		   -box-sizing: border-box;
 }
 
+.bg{
+	font-size
+}
 h1{
 	font-size: 25px;
 	font-color: #000;
@@ -65,6 +68,31 @@ p{
 	font-family: 'Libre Baskerville', serif;
 	font-size: 14px;
 
+}
+
+#intro{
+	background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;
+	color: black;
+	height: 650px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#industry{
+	background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;
+	color: black;
+	height: 650px;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+#flower-school{
+	background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;
+	color: black;
+	height: 650px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 /*.story .float-left, .story .float-right{
