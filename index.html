@@ -3,6 +3,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
 		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 		<link href="css/styles.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
 
@@ -12,6 +13,7 @@
 		<ul id="nav">
 		    <li><a href="#intro"  		  title="Next Section"><img class = "nav-button" src="imgs/circle.png" alt="Link" /></a></li>
 		    <li><a href="#industry" 	  title="Next Section"><img class = "nav-button" src="imgs/circle.png" alt="Link" /></a></li>
+		    <li><a href="#map-wrapper" 	  title="Next Section"><img class = "nav-button" src="imgs/circle.png" alt="Link" /></a></li>
 		    <li><a href="#flower-school"  title="Next Section"><img class = "nav-button" src="imgs/circle.png" alt="Link" /></a></li>
 		    <li><a href="#end" 			  title="Next Section"><img class = "nav-button" src="imgs/circle.png" alt="Link" /></a></li>
 		</ul>
@@ -41,11 +43,6 @@
 			</div>
 		</div>
 
-		<div id="map">
-			<!-- interactive map below -->
-		</div>
-
-
 		<div id="industry">
 			<div class="story">
 
@@ -53,6 +50,12 @@
 
 			</div>
 		</div>
+
+		<div id="map-wrapper">
+			<div id="map">
+			</div>
+		</div>
+
 
 		<div id="flower-school">
 			<div class="story">
@@ -70,17 +73,18 @@
 			</div>
 		</div>
 
-
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 		<script src="js/thirdparty/jquery.parallax-1.1.3.js"></script>
 		<script src="js/thirdparty/jquery.localscroll-1.2.7-min.js"></script>
 		<script src="js/thirdparty/jquery.scrollTo-1.4.2-min.js"></script>
-		<script src="js/thirdparty/jquery-1.11.1.min.js"></script>
 		<script src="js/thirdparty/d3.v3.min.js"></script>
 		<script src="js/thirdparty/underscore-min.js"></script>
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+		
 		<script src="js/main.js"></script>
 		
+				
+
 	</body>
 
 </html>
