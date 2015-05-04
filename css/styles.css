@@ -105,7 +105,7 @@ p{
 
 #flower-school .story p{
 	background-color: rgba(255,255,255,.75);
-	padding: 10px;
+	padding: 5px;
 	border-radius: 20px;
 	margin: 50px 0 0 0;
 }
@@ -172,7 +172,7 @@ p{
 	width: 400px;
 	z-index: 1000;
 	position: relative;
-	font-size: 20px;
+	font-size: 14px;
 	line-height: 24px;
 	padding: 20px;
 	margin: 20px 0 0 100px;
