@@ -97,15 +97,16 @@ p{
 	color: black;
 	height: 100vh;
 	display: block;
-	background-color: #d0e2f5;
+	/*background-color: #d0e2f5;*/
 	background-image: url("../imgs/makeflower.jpg");
 	background-repeat: no-repeat;
 	background-position: right;
 }
 
 #flower-school .story p{
-	background-color: rgba(255,255,255,.75);
+	/*background-color: rgba(255,255,255,.75);*/
 	padding: 10px;
+	padding-right: 200px;
 	border-radius: 20px;
 	margin: 300px 0 0 0;
 }
@@ -172,7 +173,7 @@ p{
 	width: 400px;
 	z-index: 1000;
 	position: relative;
-	font-size: 20px;
+	font-size: 14px;
 	line-height: 24px;
 	padding: 20px;
 	margin: 20px 0 0 100px;
