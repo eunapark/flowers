@@ -1,16 +1,14 @@
 (function(){
+  	// $('#nav').localScroll(800);
 
-	$(document).ready(function(){
-	// $('#nav').localScroll(800);
-
-	// $('#intro').parallax("50%", 0.1);
-	// $('#industry').parallax("50%", 0.1);
- //  $('#map-wrapper').parallax("50%", 0.1);
-	// $('#flower-school').parallax("50%", 0.4);
-	// $('#end').parallax("50%", 0.3);
-})
+  	// $('#intro').parallax("50%", 0.1);
+  	// $('#industry').parallax("50%", 0.1);
+   //  $('#map-wrapper').parallax("50%", 0.1);
+  	// $('#flower-school').parallax("50%", 0.4);
+  	// $('#end').parallax("50%", 0.3);
 
   // MAP DIV
+
   var map = L.map('map', {scrollWheelZoom: false}).setView([39.2500,-97.743061], 3);
     
   L.tileLayer('http://{s}.tiles.mapbox.com/v3/examples.map-i875mjb7/{z}/{x}/{y}.png', {
@@ -27,15 +25,6 @@
     lng:-77.8739844,
     zoom: 5,
     source:'http://www.organicbouquet.com/i_504/msnbc-article-roses.html'
-    },
-
-  'daisy':{ 
-    flower:'Daisy',
-    thisinfo:'New York City',
-    lat:40.8075,
-    lng:-73.9619,
-    zoom: 5,
-    source:'',
     },
 
   'tulip':{  
@@ -75,6 +64,7 @@
                       .addClass('canvas-alive');
       $('.map-title').html('')
                     .append(flowerInfo[id].flower);
+      $('.map-button-wrapper').find('img').removeClass('active-map-button');
       $(this).find('img').addClass('active-map-button')
       var latlng = L.latLng(flowerInfo[id].lat, flowerInfo[id].lng);
       map.setView(latlng, flowerInfo[id].zoom);
@@ -87,3 +77,4 @@
 
 
 }).call(this);
+
