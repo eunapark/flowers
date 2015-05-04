@@ -3,6 +3,7 @@
 	   -moz-box-sizing: border-box;
 		   -box-sizing: border-box;
 	margin: 0;
+	font-family: 'Libre Baskerville';
 }
 
 .bg{
@@ -72,7 +73,7 @@ p{
 }
 
 #intro{
-	background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;
+	/*background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;*/
 	color: black;
 	height: 650px;
 	margin: 0 auto;
@@ -80,7 +81,7 @@ p{
 }
 
 #industry{
-	background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;
+	/*background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;*/
 	color: black;
 	height: 650px;
 	margin: 0 auto;
@@ -89,11 +90,23 @@ p{
 }
 
 #flower-school{
-	background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;
+	/*background:url(imgs/rose-bg.svg) 50% 0 no-repeat fixed;*/
 	color: black;
 	height: 650px;
 	margin: 0 auto;
 	padding: 0;
+}
+
+/*MAP DIV*/
+
+.map-title {
+	position: relative;
+	z-index: 1000;
+	font-size: 60px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,.2);
+	font-family: 'Dancing Script', cursive;
 }
 
 #map {
@@ -102,10 +115,53 @@ p{
 	float: left;
 	position: relative;
 	z-index: 1;
+	cursor: default;
 }
 
-/*.story .float-left, .story .float-right{
-	padding: 100px 0 0 0;
+.map-button-wrapper{
 	position: relative;
-	width: 400px;	
-}*/
+	z-index: 1000;
+	width: 700px;
+	margin: 0 auto;
+}
+
+.mapButton {
+	display: inline-block;
+	padding: 10px 20px 0px 20px;
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+.mapButton img {
+	width: 120px;
+	border-radius: 50%;
+	border: 2px solid white;
+	background-color: white;
+}
+
+.mapButton img:hover {
+	box-shadow: 2px 2px 10px 3px white;
+}
+
+.active-map-button{
+	box-shadow: 2px 2px 10px 3px white;
+}
+
+#map-canvas {
+	top: 0; 
+	width: 400px;
+	z-index: 1000;
+	position: relative;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 20px;
+	margin: 20px 0 0 100px;
+}
+
+.canvas-alive {
+	background-color: rgba(255,255,255,.5);
+	border-radius: 25px;
+}
+
+/*END MAP DIV*/

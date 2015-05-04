@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 		<link href="css/styles.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 
 		<title>Flower Industry</title>
 	</head>
@@ -53,6 +54,16 @@
 
 		<div id="map-wrapper">
 			<div id="map">
+			<div class="map-title">Choose a flower, follow its journey</div>
+			<div class="map-button-wrapper">
+				<div class="mapButton" data-which="rose"><img src="imgs/rosebutton.png"></div>
+				<div class="mapButton" data-which="daisy"><img src="imgs/daisybutton.png"></div>
+				<div class="mapButton" data-which="tulip"><img src="imgs/tulipbutton.png"></div>
+				<div class="mapButton" data-which="lilly"><img src="imgs/lillybutton.png"></div>
+			</div>
+
+				<div id="map-canvas">
+				</div>
 			</div>
 		</div>
 
@@ -80,6 +91,7 @@
 		<script src="js/thirdparty/d3.v3.min.js"></script>
 		<script src="js/thirdparty/underscore-min.js"></script>
 		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+		<script src="js/thirdparty/jquery-1.11.1.min.js"></script>
 		
 		<script src="js/main.js"></script>
 		
