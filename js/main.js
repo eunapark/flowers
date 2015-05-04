@@ -9,16 +9,6 @@
 
   // MAP DIV
 
-  ( function( $ ) {
-    // Init Skrollr
-    var s = skrollr.init({
-        render: function(data) {
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
-        }
-    });
-    } )( jQuery );
-
   var map = L.map('map', {scrollWheelZoom: false}).setView([39.2500,-97.743061], 3);
     
   L.tileLayer('http://{s}.tiles.mapbox.com/v3/examples.map-i875mjb7/{z}/{x}/{y}.png', {

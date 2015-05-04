@@ -73,20 +73,6 @@ p{
 
 }
 
-#end{
-	margin: 50px auto;
-	min-width: 90px;
-	overflow: auto;
-	padding-left: 8em;
-	position: absolute;
-	margin-top: 75px;
-	width: 650px;
-	height: 800px;
-	font-family: 'Libre Baskerville', serif;
-	font-size: 14px;
-	line-height: 25px;
-}
-
 #intro{
 	background: url("../imgs/header-img.png");
 	background-repeat: no-repeat;
@@ -112,19 +98,16 @@ p{
 	height: 100vh;
 	display: block;
 	background-color: #d0e2f5;
+	background-image: url("../imgs/makeflower.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
 }
 
 #flower-school .story p{
 	background-color: rgba(255,255,255,.75);
 	padding: 10px;
 	border-radius: 20px;
-}
-
-.storyImg img {
-	display: inline-block;
-	float: right;
-	padding: 20px 0px 20px 0px;
-	height: 100vh;
+	margin: 300px 0 0 0;
 }
 
 /*MAP DIV*/
