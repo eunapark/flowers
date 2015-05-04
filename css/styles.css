@@ -1,22 +1,19 @@
 *{
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-		   -box-sizing: border-box;
 	margin: 0;
 	font-family: 'Libre Baskerville';
 }
 
-.bg{
-	font-size
-}
-h1{
-	font-size: 25px;
-	font-color: #000;
-	padding-top: 20px;
+#siteTitle{
+	font-size: 60px;
+	line-height: 60px;
+	padding: 50px 0 0 45px;
+	font-family: 'Dancing Script'; 
 }
 
 #byline{
 	font-size: 10px;
+	line-height: 8px;
+	padding: 20px 0 10px 100px;
 }
 
 .rose{
@@ -26,7 +23,10 @@ h1{
 
 .nav-button{
 	height: 15px;
+}
 
+img .nav-button {
+	border: 10px solid white;
 }
 
 #nav{
@@ -73,12 +73,29 @@ p{
 
 }
 
+#end{
+	margin: 50px auto;
+	min-width: 90px;
+	overflow: auto;
+	padding-left: 8em;
+	position: absolute;
+	margin-top: 75px;
+	width: 650px;
+	height: 800px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 14px;
+	line-height: 25px;
+}
+
 #intro{
-	background:url(imgs/JCausey_LFS_class.jpg) 50% 0 no-repeat fixed;
+	background: url("../imgs/header-img.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #FBEFF2;
 	color: black;
 	height: 100vh;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 0 10px 0;
 }
 
 #industry{
@@ -94,9 +111,28 @@ p{
 	color: black;
 	height: 100vh;
 	display: block;
+	background-color: #d0e2f5;
+}
+
+#flower-school .story p{
+	background-color: rgba(255,255,255,.75);
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.storyImg img {
+	display: inline-block;
+	float: right;
+	padding: 20px 0px 20px 0px;
+	height: 100vh;
 }
 
 /*MAP DIV*/
+
+#map-wrapper{
+	display: block;
+	height: 100vh;
+}
 
 .map-title {
 	position: relative;
@@ -110,7 +146,7 @@ p{
 
 #map {
 	width: 100%;
-	height: 700px;
+	height: 100vh;
 	float: left;
 	z-index: 1;
 	cursor: default;

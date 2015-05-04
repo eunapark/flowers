@@ -1,16 +1,24 @@
 (function(){
+  	// $('#nav').localScroll(800);
 
-	$(document).ready(function(){
-	// $('#nav').localScroll(800);
-
-	// $('#intro').parallax("50%", 0.1);
-	// $('#industry').parallax("50%", 0.1);
- //  $('#map-wrapper').parallax("50%", 0.1);
-	// $('#flower-school').parallax("50%", 0.4);
-	// $('#end').parallax("50%", 0.3);
-})
+  	// $('#intro').parallax("50%", 0.1);
+  	// $('#industry').parallax("50%", 0.1);
+   //  $('#map-wrapper').parallax("50%", 0.1);
+  	// $('#flower-school').parallax("50%", 0.4);
+  	// $('#end').parallax("50%", 0.3);
 
   // MAP DIV
+
+  ( function( $ ) {
+    // Init Skrollr
+    var s = skrollr.init({
+        render: function(data) {
+            //Debugging - Log the current scroll position.
+            //console.log(data.curTop);
+        }
+    });
+    } )( jQuery );
+
   var map = L.map('map', {scrollWheelZoom: false}).setView([39.2500,-97.743061], 3);
     
   L.tileLayer('http://{s}.tiles.mapbox.com/v3/examples.map-i875mjb7/{z}/{x}/{y}.png', {
@@ -79,3 +87,4 @@
 
 
 }).call(this);
+
