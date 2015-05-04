@@ -25,6 +25,7 @@
     thisinfo:'Today, some 78 percent of the 4 billion cut flower stems purchased in the U.S. — including the roses bought on Valentine\'s Day — come from Colombia and Ecuador, where they are grown in large production greenhouses, then harvested, sorted and shipped out around the world. Roses are the most important traded product of the cutflower industry and play a key role in the $20 billion U.S. floral industry.',
     lat:0.5376666,
     lng:-77.8739844,
+    zoom: 5,
     source:'http://www.organicbouquet.com/i_504/msnbc-article-roses.html'
     },
 
@@ -33,29 +34,41 @@
     thisinfo:'New York City',
     lat:40.8075,
     lng:-73.9619,
+    zoom: 5,
     source:'',
     },
 
   'tulip':{  
     flower:'Tulip',
-    thisinfo:'Holland\'s vast wealth of cut flowers is still readily available in the U.S., too. Tulips lead the list of top exports from the Netherlands, accounting for almost 95% of all U.S. tulip imports. Roses, lilies, Gerberas, Freesias, snapdragons, and cymbidium orchids are other Dutch favorites.',
+    thisinfo:'Holland\'s vast wealth of cut flowers is still readily available in the U.S. Tulips lead the list of top exports from the Netherlands, accounting for almost 95% of all U.S. tulip imports. Roses, lilies, Gerberas, Freesias, snapdragons, and cymbidium orchids are other Dutch favorites.',
     lat:52.2129918,
     lng:5.2793703,
+    zoom: 5,
     source:'http://www.800florals.com/care/flowers-sources.asp',
     },
 
-  'lilly':{
-    flower:'Lilly',
-    thisinfo:'Chicago',
-    lat:41.878114,
-    lng:-87.629798,
+  'lily':{
+    flower:'Lily',
+    thisinfo:'As of 2011, the majority of Lily imports come from Costa Rica. The Central American country accounted for 43 percent of the 15 million lilies imported that year.',
+    lat:9.8846329,
+    lng:-84.9023777,
+    zoom: 8,
     source:'',
-    }
+    },
+
+  'orchid':{ 
+    flower:'Orchid',
+    thisinfo:'The U.S. imported more than 83 million Orchids in 2014, and 61.3 million were brought in from Taiwan. The Netherlands and Thailand imported the second-most.',
+    lat:23.7543845,
+    lng:120.7299647,
+    zoom: 8,
+    source:'http://apps.fas.usda.gov/gats/default.aspx',
+    },
 
   };
 
   $('.mapButton').on('click', function(){
-      var id = $(this).find('[data-which]');
+      var id = $(this).attr('data-which');
       console.log(id);
       $('#map-canvas').html('')
                       .append(flowerInfo[id].thisinfo)
@@ -64,7 +77,7 @@
                     .append(flowerInfo[id].flower);
       $(this).find('img').addClass('active-map-button')
       var latlng = L.latLng(flowerInfo[id].lat, flowerInfo[id].lng);
-      map.setView(latlng, 5);
+      map.setView(latlng, flowerInfo[id].zoom);
   })
 
 

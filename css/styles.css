@@ -121,8 +121,9 @@ p{
 .map-button-wrapper{
 	position: relative;
 	z-index: 1000;
-	width: 700px;
+	width: 900px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .mapButton {
@@ -154,7 +155,7 @@ p{
 	z-index: 1000;
 	position: relative;
 	font-size: 20px;
-	line-height: 20px;
+	line-height: 24px;
 	padding: 20px;
 	margin: 20px 0 0 100px;
 }
