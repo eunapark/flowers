@@ -111,11 +111,8 @@ p{
 	padding: 0;
 }
 
-.graf-image{
-	display: block;
-	margin: auto;
-	max-width: 100%;
-	box-sizing: border-box;
+#end{
+	padding-top: 200px;
 }
 
 /*MAP DIV*/
