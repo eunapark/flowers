@@ -6,6 +6,9 @@
    //  $('#map-wrapper').parallax("50%", 0.1);
   	// $('#flower-school').parallax("50%", 0.4);
   	// $('#end').parallax("50%", 0.3);
+    // Init Skrollr
+    var s = skrollr.init();
+
 
   // MAP DIV
 
