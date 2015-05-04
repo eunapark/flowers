@@ -29,15 +29,6 @@
     source:'http://www.organicbouquet.com/i_504/msnbc-article-roses.html'
     },
 
-  'daisy':{ 
-    flower:'Daisy',
-    thisinfo:'New York City',
-    lat:40.8075,
-    lng:-73.9619,
-    zoom: 5,
-    source:'',
-    },
-
   'tulip':{  
     flower:'Tulip',
     thisinfo:'Holland\'s vast wealth of cut flowers is still readily available in the U.S. Tulips lead the list of top exports from the Netherlands, accounting for almost 95% of all U.S. tulip imports. Roses, lilies, Gerberas, Freesias, snapdragons, and cymbidium orchids are other Dutch favorites.',
@@ -75,6 +66,7 @@
                       .addClass('canvas-alive');
       $('.map-title').html('')
                     .append(flowerInfo[id].flower);
+      $('.map-button-wrapper').find('img').removeClass('active-map-button');
       $(this).find('img').addClass('active-map-button')
       var latlng = L.latLng(flowerInfo[id].lat, flowerInfo[id].lng);
       map.setView(latlng, flowerInfo[id].zoom);
